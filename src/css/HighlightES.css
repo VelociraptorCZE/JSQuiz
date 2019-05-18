@@ -1,0 +1,43 @@
+/**
+ * HighlightES
+ * Copyright (c) Simon Raichl 2019
+ * MIT License
+ */
+
+.highlight-es--window, .highlight-es--native {
+    color: #b20003;
+}
+
+.highlight-es--keyword {
+    color: #be5b00;
+}
+
+.highlight-es--string {
+    color: #006911;
+}
+
+.highlight-es--regex {
+    color: #69611d;
+}
+
+.highlight-es--number {
+    color: #126371;
+}
+
+.highlight-es--comments {
+    color: #838581;
+}
+
+/* overriding default style - strings, comments and regex */
+
+.highlight-es--string span[class*=highlight-es] {
+    color: #006911;
+}
+
+.highlight-es--regex span[class*=highlight-es] {
+    color: #69611d;
+}
+
+.highlight-es--comments span[class*=highlight-es]  {
+    color: #838581;
+}

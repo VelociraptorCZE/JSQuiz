@@ -1,0 +1,67 @@
+@keyframes color-change {
+    0% {
+        background: #980f0f;
+    }
+
+    33% {
+        background: #1f780a;
+    }
+
+    66% {
+        background: #0b0456;
+    }
+
+    100% {
+        background: #980f0f;
+    }
+}
+
+body {
+    background: #000;
+    animation: color-change 80s linear infinite;
+    font-family: Segoe UI, sans-serif;
+    color: #fff;
+    width: 100vw;
+    margin: 0;
+}
+
+.js-icon {
+    margin: 2px;
+    padding: 8px 4px 0 16px;
+    background: #ffd200;
+}
+
+.answer-card {
+    padding: 1rem;
+    margin: .5rem;
+    background: rgba(255, 255, 255, .2);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.answer-card:hover {
+    background: rgba(255, 255, 255, .35);
+}
+
+.notification {
+    padding: 1rem;
+    border: 3px solid;
+}
+
+.notification-true {
+    background: #1a6924;
+    border-color: #256938;
+}
+
+.notification-false {
+    background: #690001;
+    border-color: #69271b;
+}
+
+code {
+    background: #1f1d1d;
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #fff;
+}

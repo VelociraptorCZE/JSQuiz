@@ -1,0 +1,94 @@
+[
+  {
+    "text": "What's the correct declaration of block scoped variable which can be overwritten?",
+    "answers": [
+      "var universe = 42",
+      "const universe = 42",
+      "let universe = 42",
+      "window.universe = 42"
+    ],
+    "correct": 2
+  },
+  {
+    "text": "When the function has a parameter with spread operator, can you define any parameter after this one?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": 1
+  },
+  {
+    "text": "What's the most correct approach to destructure first and third value from the array?",
+    "answers": [
+      "[...[first,,, third]] = [1, 2, 3, 4]",
+      "[first, , third] = [1, 2, 3, 4]",
+      "[first, third] = [1, 2, 3, 4].filter((value, i) => i === 0 || i === 2)",
+      "It's not possible to destructure any values from an arrays."
+    ],
+    "correct": 1
+  },
+  {
+    "text": "Is it possible to destructure array inside an object? e.g. <code>{ ...[42, 43] }</code>",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": 0
+  },
+  {
+    "text": "What is going to return this piece of code? <code>{<br> ...{ universe: 42, string: \"JS\" },<br>  ...{ universe: 41, _string: \"PHP\" }<br>}</code>",
+    "answers": [
+      "{universe: 41, string: \"JS\", _string: \"PHP\"}",
+      "{universe: 42, string: \"JS\", _string: \"PHP\"}",
+      "{universe: 42, string: \"JS\"}",
+      "Syntax error"
+    ],
+    "correct": 0
+  },
+  {
+    "text": "Which statement <strong>is NOT</strong> going to return NaN?",
+    "answers": [
+      "+\"4n\"",
+      "Number(\"4n\")",
+      "\"4n\" / 1",
+      "parseInt(\"4n\")"
+    ],
+    "correct": 3
+  },
+  {
+    "text": "Does JavaScript have only one primitive type which deals with numbers (type Number in particular)?",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": 1
+  },
+  {
+    "text": "What is going to return the following code? <code>typeof 1n</code>",
+    "answers": [
+      "\"number\"",
+      "\"undefined\"",
+      "\"bigint\"",
+      "Syntax error"
+    ],
+    "correct": 2
+  },
+  {
+    "text": "If you freeze the following object, would you be able to change value of the <strong>c</strong> property? <code>Object.freeze({ a: 1, b: { c: 2 } })</code>",
+    "answers": [
+      "Yes",
+      "No"
+    ],
+    "correct": 0
+  },
+  {
+    "text": "What function can you use to \"destructure\" nested arrays in an array to single dimensional array? E.g. ([1, 2, [3, 4, [5]]] destructure to [1, 2, 3, 4, 5])" ,
+    "answers": [
+      "slice",
+      "concat",
+      "flat",
+      "This is not currently possible by using one function"
+    ],
+    "correct": 2
+  }
+]
