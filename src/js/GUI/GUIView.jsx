@@ -7,7 +7,7 @@
 import { h } from "preact";
 import GUI from "./GUI";
 
-export default class GUIComponent extends GUI {
+export default class GUIView extends GUI {
     constructor () {
         super();
     }

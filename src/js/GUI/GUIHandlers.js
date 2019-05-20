@@ -41,8 +41,6 @@ const guiHandlers = {
             answerNotification: void 0,
             currentQuestion: questions.getQuestion(questions.getUnusedRandomId())
         });
-
-        this.highlightCode();
     }
 };
 

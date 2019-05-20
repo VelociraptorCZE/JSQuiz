@@ -16,6 +16,6 @@ import "whatwg-fetch";
 // modules
 
 import { h, render } from "preact";
-import GUIComponent from "./GUI/GUIComponent.jsx";
+import GUIView from "./GUI/GUIView.jsx";
 
-render(<GUIComponent/>, document.body);
+render(<GUIView/>, document.body);

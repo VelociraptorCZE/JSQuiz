@@ -23,18 +23,16 @@ export default class GUI extends Component {
         this.initHandlers();
     }
 
+    componentDidUpdate() {
+        new HighlightES("code");
+    }
+
     async setQuestionManager () {
         this.questions = new QuestionManager();
         await this.questions.fetchQuestions();
         this.setState({
             currentQuestion: this.questions.getQuestion(this.questions.getRandomId())
         });
-        this.highlightCode();
-    }
-
-    async highlightCode () {
-        await Thread.sleep(25);
-        new HighlightES("code");
     }
 
     showNotification () {
@@ -42,7 +40,7 @@ export default class GUI extends Component {
 
         if (answerNotification !== void 0) {
             return (
-                <div className={`notification notification-${answerNotification}`}>
+                <div class={`notification notification-${answerNotification}`}>
                     {answerNotification ? "Correct!" : "Incorrect!"}
                 </div>
             );
