@@ -1,11 +1,11 @@
 const webpack = require("webpack");
 const path = require("path");
 const process = require("process");
-const Uglify = require("uglifyjs-webpack-plugin");
 
 process.env.NODE_ENV = "production";
 
 module.exports = {
+    watch: true,
     entry: [
         "./src/js/app.js"
     ],
@@ -30,17 +30,5 @@ module.exports = {
                     cacheDirectory: true,
                 },
             }
-        ]},
-    optimization: {
-        usedExports: true,
-        minimizer: [
-            new Uglify({
-                uglifyOptions: {
-                    compress: {
-                        drop_console: true,
-                    }
-                }
-            })
-        ]
-    }
+        ]}
 };
